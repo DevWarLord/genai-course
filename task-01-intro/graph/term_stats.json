@@ -1,0 +1,1161 @@
+{
+  "method": "explicit = term written directly; implicit = concept described in other words (hand-made patterns in terms.json). URLs are ignored.",
+  "sections": [
+    "Intro",
+    "1. Code assistants",
+    "2. Coding agents",
+    "3. Test generation",
+    "4. Code review & security",
+    "5. Docs & knowledge search",
+    "6. Support bots",
+    "7. Data analysis / SQL",
+    "8. Content generation",
+    "Summary"
+  ],
+  "terms": {
+    "LLM": {
+      "explicit": 3,
+      "implicit": 12,
+      "total": 15,
+      "sections": {
+        "1. Code assistants": {
+          "explicit": 1,
+          "implicit": 2
+        },
+        "2. Coding agents": {
+          "explicit": 0,
+          "implicit": 1
+        },
+        "3. Test generation": {
+          "explicit": 1,
+          "implicit": 0
+        },
+        "4. Code review & security": {
+          "explicit": 0,
+          "implicit": 1
+        },
+        "5. Docs & knowledge search": {
+          "explicit": 0,
+          "implicit": 2
+        },
+        "7. Data analysis / SQL": {
+          "explicit": 1,
+          "implicit": 4
+        },
+        "Summary": {
+          "explicit": 0,
+          "implicit": 2
+        }
+      },
+      "implicit_examples": [
+        "a model",
+        "external model",
+        "gemini models",
+        "open model",
+        "the model"
+      ]
+    },
+    "Token": {
+      "explicit": 2,
+      "implicit": 1,
+      "total": 3,
+      "sections": {
+        "1. Code assistants": {
+          "explicit": 1,
+          "implicit": 0
+        },
+        "2. Coding agents": {
+          "explicit": 1,
+          "implicit": 0
+        },
+        "6. Support bots": {
+          "explicit": 0,
+          "implicit": 1
+        }
+      },
+      "implicit_examples": [
+        "cost per conversation"
+      ]
+    },
+    "Next-token prediction": {
+      "explicit": 1,
+      "implicit": 3,
+      "total": 4,
+      "sections": {
+        "1. Code assistants": {
+          "explicit": 1,
+          "implicit": 1
+        },
+        "2. Coding agents": {
+          "explicit": 0,
+          "implicit": 2
+        }
+      },
+      "implicit_examples": [
+        "autocomplete",
+        "complete lines"
+      ]
+    },
+    "Context window": {
+      "explicit": 1,
+      "implicit": 3,
+      "total": 4,
+      "sections": {
+        "1. Code assistants": {
+          "explicit": 1,
+          "implicit": 2
+        },
+        "7. Data analysis / SQL": {
+          "explicit": 0,
+          "implicit": 1
+        }
+      },
+      "implicit_examples": [
+        "as context",
+        "do not fit into the context",
+        "only sees what fits"
+      ]
+    },
+    "Prompt": {
+      "explicit": 2,
+      "implicit": 4,
+      "total": 6,
+      "sections": {
+        "1. Code assistants": {
+          "explicit": 1,
+          "implicit": 2
+        },
+        "2. Coding agents": {
+          "explicit": 0,
+          "implicit": 1
+        },
+        "5. Docs & knowledge search": {
+          "explicit": 1,
+          "implicit": 0
+        },
+        "7. Data analysis / SQL": {
+          "explicit": 0,
+          "implicit": 1
+        }
+      },
+      "implicit_examples": [
+        "describe an app in words",
+        "from a comment",
+        "question in normal language",
+        "task in natural language"
+      ]
+    },
+    "Prompt engineering": {
+      "explicit": 0,
+      "implicit": 2,
+      "total": 2,
+      "sections": {
+        "2. Coding agents": {
+          "explicit": 0,
+          "implicit": 2
+        }
+      },
+      "implicit_examples": [
+        "how well the task is described",
+        "project instructions"
+      ]
+    },
+    "Hallucination": {
+      "explicit": 2,
+      "implicit": 9,
+      "total": 11,
+      "sections": {
+        "1. Code assistants": {
+          "explicit": 1,
+          "implicit": 1
+        },
+        "3. Test generation": {
+          "explicit": 0,
+          "implicit": 1
+        },
+        "4. Code review & security": {
+          "explicit": 0,
+          "implicit": 1
+        },
+        "5. Docs & knowledge search": {
+          "explicit": 0,
+          "implicit": 1
+        },
+        "6. Support bots": {
+          "explicit": 0,
+          "implicit": 2
+        },
+        "7. Data analysis / SQL": {
+          "explicit": 0,
+          "implicit": 1
+        },
+        "Summary": {
+          "explicit": 1,
+          "implicit": 2
+        }
+      },
+      "implicit_examples": [
+        "confident and wrong",
+        "confident answer",
+        "do not exist",
+        "does not exist",
+        "made-up",
+        "sounding confident",
+        "wrong information",
+        "wrong numbers"
+      ]
+    },
+    "Grounding": {
+      "explicit": 1,
+      "implicit": 3,
+      "total": 4,
+      "sections": {
+        "5. Docs & knowledge search": {
+          "explicit": 0,
+          "implicit": 2
+        },
+        "6. Support bots": {
+          "explicit": 1,
+          "implicit": 0
+        },
+        "7. Data analysis / SQL": {
+          "explicit": 0,
+          "implicit": 1
+        }
+      },
+      "implicit_examples": [
+        "based on real company data",
+        "links to the source",
+        "show the generated query"
+      ]
+    },
+    "RAG": {
+      "explicit": 3,
+      "implicit": 4,
+      "total": 7,
+      "sections": {
+        "5. Docs & knowledge search": {
+          "explicit": 2,
+          "implicit": 3
+        },
+        "6. Support bots": {
+          "explicit": 1,
+          "implicit": 1
+        }
+      },
+      "implicit_examples": [
+        "answer questions over internal docs",
+        "answers questions from the docs",
+        "retrieval brings",
+        "using the company knowledge base"
+      ]
+    },
+    "Embedding": {
+      "explicit": 1,
+      "implicit": 1,
+      "total": 2,
+      "sections": {
+        "5. Docs & knowledge search": {
+          "explicit": 1,
+          "implicit": 1
+        }
+      },
+      "implicit_examples": [
+        "most similar chunks"
+      ]
+    },
+    "Vector database": {
+      "explicit": 1,
+      "implicit": 2,
+      "total": 3,
+      "sections": {
+        "5. Docs & knowledge search": {
+          "explicit": 1,
+          "implicit": 2
+        }
+      },
+      "implicit_examples": [
+        "enterprise search",
+        "indexes"
+      ]
+    },
+    "Fine-tuning": {
+      "explicit": 1,
+      "implicit": 1,
+      "total": 2,
+      "sections": {
+        "1. Code assistants": {
+          "explicit": 0,
+          "implicit": 1
+        },
+        "5. Docs & knowledge search": {
+          "explicit": 1,
+          "implicit": 0
+        }
+      },
+      "implicit_examples": [
+        "models adapted to a company"
+      ]
+    },
+    "Inference": {
+      "explicit": 1,
+      "implicit": 2,
+      "total": 3,
+      "sections": {
+        "1. Code assistants": {
+          "explicit": 1,
+          "implicit": 1
+        },
+        "8. Content generation": {
+          "explicit": 0,
+          "implicit": 1
+        }
+      },
+      "implicit_examples": [
+        "gpu compute",
+        "suggestions come after"
+      ]
+    },
+    "AI agent": {
+      "explicit": 16,
+      "implicit": 3,
+      "total": 19,
+      "sections": {
+        "1. Code assistants": {
+          "explicit": 1,
+          "implicit": 0
+        },
+        "2. Coding agents": {
+          "explicit": 8,
+          "implicit": 2
+        },
+        "6. Support bots": {
+          "explicit": 5,
+          "implicit": 1
+        },
+        "Summary": {
+          "explicit": 2,
+          "implicit": 0
+        }
+      },
+      "implicit_examples": [
+        "autonomous",
+        "can also do actions",
+        "plans the steps by itself"
+      ]
+    },
+    "Agentic harness": {
+      "explicit": 1,
+      "implicit": 3,
+      "total": 4,
+      "sections": {
+        "2. Coding agents": {
+          "explicit": 1,
+          "implicit": 3
+        }
+      },
+      "implicit_examples": [
+        "agentic coding tool",
+        "terminal agent",
+        "works in the terminal"
+      ]
+    },
+    "Tool calling": {
+      "explicit": 1,
+      "implicit": 3,
+      "total": 4,
+      "sections": {
+        "2. Coding agents": {
+          "explicit": 1,
+          "implicit": 2
+        },
+        "6. Support bots": {
+          "explicit": 0,
+          "implicit": 1
+        }
+      },
+      "implicit_examples": [
+        "run commands",
+        "runs commands",
+        "using tools connected"
+      ]
+    },
+    "MCP": {
+      "explicit": 1,
+      "implicit": 2,
+      "total": 3,
+      "sections": {
+        "2. Coding agents": {
+          "explicit": 1,
+          "implicit": 1
+        },
+        "6. Support bots": {
+          "explicit": 0,
+          "implicit": 1
+        }
+      },
+      "implicit_examples": [
+        "connect to jira",
+        "connected to the company systems"
+      ]
+    },
+    "Guardrails": {
+      "explicit": 3,
+      "implicit": 4,
+      "total": 7,
+      "sections": {
+        "2. Coding agents": {
+          "explicit": 1,
+          "implicit": 2
+        },
+        "5. Docs & knowledge search": {
+          "explicit": 0,
+          "implicit": 2
+        },
+        "6. Support bots": {
+          "explicit": 1,
+          "implicit": 0
+        },
+        "Summary": {
+          "explicit": 1,
+          "implicit": 0
+        }
+      },
+      "implicit_examples": [
+        "must not show a document",
+        "permission prompts",
+        "respects permissions",
+        "sandboxes"
+      ]
+    },
+    "Prompt injection": {
+      "explicit": 2,
+      "implicit": 2,
+      "total": 4,
+      "sections": {
+        "2. Coding agents": {
+          "explicit": 1,
+          "implicit": 1
+        },
+        "6. Support bots": {
+          "explicit": 1,
+          "implicit": 1
+        }
+      },
+      "implicit_examples": [
+        "ignore its instructions",
+        "run something dangerous"
+      ]
+    },
+    "Human in the loop": {
+      "explicit": 1,
+      "implicit": 8,
+      "total": 9,
+      "sections": {
+        "2. Coding agents": {
+          "explicit": 1,
+          "implicit": 1
+        },
+        "3. Test generation": {
+          "explicit": 0,
+          "implicit": 1
+        },
+        "4. Code review & security": {
+          "explicit": 0,
+          "implicit": 2
+        },
+        "6. Support bots": {
+          "explicit": 0,
+          "implicit": 2
+        },
+        "8. Content generation": {
+          "explicit": 0,
+          "implicit": 1
+        },
+        "Summary": {
+          "explicit": 0,
+          "implicit": 1
+        }
+      },
+      "implicit_examples": [
+        "handoff to a human",
+        "hands off to humans",
+        "human review",
+        "must be checked",
+        "reviews the result",
+        "still has to review"
+      ]
+    },
+    "Evals": {
+      "explicit": 1,
+      "implicit": 2,
+      "total": 3,
+      "sections": {
+        "5. Docs & knowledge search": {
+          "explicit": 0,
+          "implicit": 1
+        },
+        "6. Support bots": {
+          "explicit": 1,
+          "implicit": 0
+        },
+        "7. Data analysis / SQL": {
+          "explicit": 0,
+          "implicit": 1
+        }
+      },
+      "implicit_examples": [
+        "results must be checkable",
+        "search quality"
+      ]
+    },
+    "Multimodal model": {
+      "explicit": 1,
+      "implicit": 4,
+      "total": 5,
+      "sections": {
+        "8. Content generation": {
+          "explicit": 1,
+          "implicit": 4
+        }
+      },
+      "implicit_examples": [
+        "image and video generation",
+        "text-to-image",
+        "voice generation"
+      ]
+    },
+    "SLM": {
+      "explicit": 1,
+      "implicit": 3,
+      "total": 4,
+      "sections": {
+        "1. Code assistants": {
+          "explicit": 1,
+          "implicit": 2
+        },
+        "7. Data analysis / SQL": {
+          "explicit": 0,
+          "implicit": 1
+        }
+      },
+      "implicit_examples": [
+        "on their own servers",
+        "on-premise",
+        "run models locally"
+      ]
+    },
+    "Vibe coding": {
+      "explicit": 1,
+      "implicit": 2,
+      "total": 3,
+      "sections": {
+        "1. Code assistants": {
+          "explicit": 1,
+          "implicit": 2
+        }
+      },
+      "implicit_examples": [
+        "accept suggestions without understanding",
+        "accept whatever is generated"
+      ]
+    }
+  },
+  "cooccurrence": [
+    {
+      "a": "Hallucination",
+      "b": "LLM",
+      "paragraphs": 5
+    },
+    {
+      "a": "Hallucination",
+      "b": "Human in the loop",
+      "paragraphs": 4
+    },
+    {
+      "a": "Context window",
+      "b": "LLM",
+      "paragraphs": 3
+    },
+    {
+      "a": "AI agent",
+      "b": "Tool calling",
+      "paragraphs": 3
+    },
+    {
+      "a": "AI agent",
+      "b": "Human in the loop",
+      "paragraphs": 3
+    },
+    {
+      "a": "Guardrails",
+      "b": "Human in the loop",
+      "paragraphs": 3
+    },
+    {
+      "a": "RAG",
+      "b": "Vector database",
+      "paragraphs": 3
+    },
+    {
+      "a": "Evals",
+      "b": "Hallucination",
+      "paragraphs": 3
+    },
+    {
+      "a": "Guardrails",
+      "b": "Hallucination",
+      "paragraphs": 3
+    },
+    {
+      "a": "Context window",
+      "b": "Vibe coding",
+      "paragraphs": 2
+    },
+    {
+      "a": "LLM",
+      "b": "Prompt",
+      "paragraphs": 2
+    },
+    {
+      "a": "LLM",
+      "b": "Vibe coding",
+      "paragraphs": 2
+    },
+    {
+      "a": "Next-token prediction",
+      "b": "Prompt",
+      "paragraphs": 2
+    },
+    {
+      "a": "Context window",
+      "b": "Hallucination",
+      "paragraphs": 2
+    },
+    {
+      "a": "Context window",
+      "b": "SLM",
+      "paragraphs": 2
+    },
+    {
+      "a": "Fine-tuning",
+      "b": "Hallucination",
+      "paragraphs": 2
+    },
+    {
+      "a": "Fine-tuning",
+      "b": "LLM",
+      "paragraphs": 2
+    },
+    {
+      "a": "Hallucination",
+      "b": "SLM",
+      "paragraphs": 2
+    },
+    {
+      "a": "LLM",
+      "b": "SLM",
+      "paragraphs": 2
+    },
+    {
+      "a": "AI agent",
+      "b": "Prompt",
+      "paragraphs": 2
+    },
+    {
+      "a": "AI agent",
+      "b": "Agentic harness",
+      "paragraphs": 2
+    },
+    {
+      "a": "AI agent",
+      "b": "MCP",
+      "paragraphs": 2
+    },
+    {
+      "a": "Agentic harness",
+      "b": "Tool calling",
+      "paragraphs": 2
+    },
+    {
+      "a": "MCP",
+      "b": "Tool calling",
+      "paragraphs": 2
+    },
+    {
+      "a": "AI agent",
+      "b": "Guardrails",
+      "paragraphs": 2
+    },
+    {
+      "a": "Guardrails",
+      "b": "Prompt injection",
+      "paragraphs": 2
+    },
+    {
+      "a": "Guardrails",
+      "b": "Token",
+      "paragraphs": 2
+    },
+    {
+      "a": "Human in the loop",
+      "b": "Prompt injection",
+      "paragraphs": 2
+    },
+    {
+      "a": "Human in the loop",
+      "b": "Token",
+      "paragraphs": 2
+    },
+    {
+      "a": "Prompt injection",
+      "b": "Token",
+      "paragraphs": 2
+    },
+    {
+      "a": "AI agent",
+      "b": "LLM",
+      "paragraphs": 2
+    },
+    {
+      "a": "Human in the loop",
+      "b": "LLM",
+      "paragraphs": 2
+    },
+    {
+      "a": "Grounding",
+      "b": "RAG",
+      "paragraphs": 2
+    },
+    {
+      "a": "Evals",
+      "b": "Guardrails",
+      "paragraphs": 2
+    },
+    {
+      "a": "Evals",
+      "b": "LLM",
+      "paragraphs": 2
+    },
+    {
+      "a": "Guardrails",
+      "b": "LLM",
+      "paragraphs": 2
+    },
+    {
+      "a": "Guardrails",
+      "b": "RAG",
+      "paragraphs": 2
+    },
+    {
+      "a": "Guardrails",
+      "b": "Vector database",
+      "paragraphs": 2
+    },
+    {
+      "a": "AI agent",
+      "b": "RAG",
+      "paragraphs": 2
+    },
+    {
+      "a": "AI agent",
+      "b": "Hallucination",
+      "paragraphs": 2
+    },
+    {
+      "a": "Context window",
+      "b": "Next-token prediction",
+      "paragraphs": 1
+    },
+    {
+      "a": "Context window",
+      "b": "Prompt",
+      "paragraphs": 1
+    },
+    {
+      "a": "Context window",
+      "b": "Token",
+      "paragraphs": 1
+    },
+    {
+      "a": "LLM",
+      "b": "Next-token prediction",
+      "paragraphs": 1
+    },
+    {
+      "a": "LLM",
+      "b": "Token",
+      "paragraphs": 1
+    },
+    {
+      "a": "Next-token prediction",
+      "b": "Token",
+      "paragraphs": 1
+    },
+    {
+      "a": "Next-token prediction",
+      "b": "Vibe coding",
+      "paragraphs": 1
+    },
+    {
+      "a": "Prompt",
+      "b": "Token",
+      "paragraphs": 1
+    },
+    {
+      "a": "Prompt",
+      "b": "Vibe coding",
+      "paragraphs": 1
+    },
+    {
+      "a": "Token",
+      "b": "Vibe coding",
+      "paragraphs": 1
+    },
+    {
+      "a": "Context window",
+      "b": "Fine-tuning",
+      "paragraphs": 1
+    },
+    {
+      "a": "Context window",
+      "b": "Inference",
+      "paragraphs": 1
+    },
+    {
+      "a": "Fine-tuning",
+      "b": "Inference",
+      "paragraphs": 1
+    },
+    {
+      "a": "Fine-tuning",
+      "b": "SLM",
+      "paragraphs": 1
+    },
+    {
+      "a": "Fine-tuning",
+      "b": "Vibe coding",
+      "paragraphs": 1
+    },
+    {
+      "a": "Hallucination",
+      "b": "Inference",
+      "paragraphs": 1
+    },
+    {
+      "a": "Hallucination",
+      "b": "Vibe coding",
+      "paragraphs": 1
+    },
+    {
+      "a": "Inference",
+      "b": "LLM",
+      "paragraphs": 1
+    },
+    {
+      "a": "Inference",
+      "b": "SLM",
+      "paragraphs": 1
+    },
+    {
+      "a": "Inference",
+      "b": "Vibe coding",
+      "paragraphs": 1
+    },
+    {
+      "a": "SLM",
+      "b": "Vibe coding",
+      "paragraphs": 1
+    },
+    {
+      "a": "AI agent",
+      "b": "SLM",
+      "paragraphs": 1
+    },
+    {
+      "a": "Prompt",
+      "b": "SLM",
+      "paragraphs": 1
+    },
+    {
+      "a": "AI agent",
+      "b": "Next-token prediction",
+      "paragraphs": 1
+    },
+    {
+      "a": "Agentic harness",
+      "b": "MCP",
+      "paragraphs": 1
+    },
+    {
+      "a": "Agentic harness",
+      "b": "Next-token prediction",
+      "paragraphs": 1
+    },
+    {
+      "a": "Agentic harness",
+      "b": "Prompt",
+      "paragraphs": 1
+    },
+    {
+      "a": "MCP",
+      "b": "Next-token prediction",
+      "paragraphs": 1
+    },
+    {
+      "a": "MCP",
+      "b": "Prompt",
+      "paragraphs": 1
+    },
+    {
+      "a": "Next-token prediction",
+      "b": "Tool calling",
+      "paragraphs": 1
+    },
+    {
+      "a": "Prompt",
+      "b": "Tool calling",
+      "paragraphs": 1
+    },
+    {
+      "a": "AI agent",
+      "b": "Prompt engineering",
+      "paragraphs": 1
+    },
+    {
+      "a": "AI agent",
+      "b": "Prompt injection",
+      "paragraphs": 1
+    },
+    {
+      "a": "AI agent",
+      "b": "Token",
+      "paragraphs": 1
+    },
+    {
+      "a": "Guardrails",
+      "b": "Prompt engineering",
+      "paragraphs": 1
+    },
+    {
+      "a": "Human in the loop",
+      "b": "Prompt engineering",
+      "paragraphs": 1
+    },
+    {
+      "a": "Prompt engineering",
+      "b": "Prompt injection",
+      "paragraphs": 1
+    },
+    {
+      "a": "Prompt engineering",
+      "b": "Token",
+      "paragraphs": 1
+    },
+    {
+      "a": "Agentic harness",
+      "b": "LLM",
+      "paragraphs": 1
+    },
+    {
+      "a": "LLM",
+      "b": "Tool calling",
+      "paragraphs": 1
+    },
+    {
+      "a": "Embedding",
+      "b": "Grounding",
+      "paragraphs": 1
+    },
+    {
+      "a": "Embedding",
+      "b": "Prompt",
+      "paragraphs": 1
+    },
+    {
+      "a": "Embedding",
+      "b": "RAG",
+      "paragraphs": 1
+    },
+    {
+      "a": "Embedding",
+      "b": "Vector database",
+      "paragraphs": 1
+    },
+    {
+      "a": "Grounding",
+      "b": "Prompt",
+      "paragraphs": 1
+    },
+    {
+      "a": "Grounding",
+      "b": "Vector database",
+      "paragraphs": 1
+    },
+    {
+      "a": "Prompt",
+      "b": "RAG",
+      "paragraphs": 1
+    },
+    {
+      "a": "Prompt",
+      "b": "Vector database",
+      "paragraphs": 1
+    },
+    {
+      "a": "Evals",
+      "b": "Fine-tuning",
+      "paragraphs": 1
+    },
+    {
+      "a": "Evals",
+      "b": "RAG",
+      "paragraphs": 1
+    },
+    {
+      "a": "Evals",
+      "b": "Vector database",
+      "paragraphs": 1
+    },
+    {
+      "a": "Fine-tuning",
+      "b": "Guardrails",
+      "paragraphs": 1
+    },
+    {
+      "a": "Fine-tuning",
+      "b": "RAG",
+      "paragraphs": 1
+    },
+    {
+      "a": "Fine-tuning",
+      "b": "Vector database",
+      "paragraphs": 1
+    },
+    {
+      "a": "Hallucination",
+      "b": "RAG",
+      "paragraphs": 1
+    },
+    {
+      "a": "Hallucination",
+      "b": "Vector database",
+      "paragraphs": 1
+    },
+    {
+      "a": "LLM",
+      "b": "RAG",
+      "paragraphs": 1
+    },
+    {
+      "a": "LLM",
+      "b": "Vector database",
+      "paragraphs": 1
+    },
+    {
+      "a": "AI agent",
+      "b": "Grounding",
+      "paragraphs": 1
+    },
+    {
+      "a": "Grounding",
+      "b": "MCP",
+      "paragraphs": 1
+    },
+    {
+      "a": "Grounding",
+      "b": "Tool calling",
+      "paragraphs": 1
+    },
+    {
+      "a": "MCP",
+      "b": "RAG",
+      "paragraphs": 1
+    },
+    {
+      "a": "RAG",
+      "b": "Tool calling",
+      "paragraphs": 1
+    },
+    {
+      "a": "Evals",
+      "b": "Human in the loop",
+      "paragraphs": 1
+    },
+    {
+      "a": "Evals",
+      "b": "Prompt injection",
+      "paragraphs": 1
+    },
+    {
+      "a": "Evals",
+      "b": "Token",
+      "paragraphs": 1
+    },
+    {
+      "a": "Hallucination",
+      "b": "Prompt injection",
+      "paragraphs": 1
+    },
+    {
+      "a": "Hallucination",
+      "b": "Token",
+      "paragraphs": 1
+    },
+    {
+      "a": "Human in the loop",
+      "b": "RAG",
+      "paragraphs": 1
+    },
+    {
+      "a": "Context window",
+      "b": "Evals",
+      "paragraphs": 1
+    },
+    {
+      "a": "Context window",
+      "b": "Grounding",
+      "paragraphs": 1
+    },
+    {
+      "a": "Evals",
+      "b": "Grounding",
+      "paragraphs": 1
+    },
+    {
+      "a": "Evals",
+      "b": "SLM",
+      "paragraphs": 1
+    },
+    {
+      "a": "Grounding",
+      "b": "Hallucination",
+      "paragraphs": 1
+    },
+    {
+      "a": "Grounding",
+      "b": "LLM",
+      "paragraphs": 1
+    },
+    {
+      "a": "Grounding",
+      "b": "SLM",
+      "paragraphs": 1
+    },
+    {
+      "a": "Human in the loop",
+      "b": "Inference",
+      "paragraphs": 1
+    },
+    {
+      "a": "Human in the loop",
+      "b": "Multimodal model",
+      "paragraphs": 1
+    },
+    {
+      "a": "Inference",
+      "b": "Multimodal model",
+      "paragraphs": 1
+    }
+  ]
+}

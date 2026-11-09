@@ -1,0 +1,99 @@
+{
+  "_comment": "explicit = the term itself (or abbreviation / plural). implicit = the concept is used but described in other words. Regex, case insensitive.",
+  "LLM": {
+    "explicit": ["\\bLLMs?\\b", "large language models?"],
+    "implicit": ["\\bthe model\\b", "\\ba model\\b", "\\b(external|open) model\\b", "\\bGemini models\\b"]
+  },
+  "Token": {
+    "explicit": ["\\btokens?\\b"],
+    "implicit": ["\\bcost per conversation\\b"]
+  },
+  "Next-token prediction": {
+    "explicit": ["predicts the next tokens?", "next[- ]token prediction"],
+    "implicit": ["\\bcomplete lines\\b", "\\bautocomplete\\b"]
+  },
+  "Context window": {
+    "explicit": ["context windows?"],
+    "implicit": ["\\bas context\\b", "do not fit into the context", "only sees what fits"]
+  },
+  "Prompt": {
+    "explicit": ["(?<!permission )\\bprompts?\\b(?! injection| engineering)"],
+    "implicit": ["\\b(task|question) in (natural|normal) language\\b", "describe an app in words", "from a comment\\b"]
+  },
+  "Prompt engineering": {
+    "explicit": ["prompt engineering"],
+    "implicit": ["how well the task is described", "project instructions"]
+  },
+  "Hallucination": {
+    "explicit": ["hallucinat\\w*"],
+    "implicit": ["do(es)? not exist\\b", "made[- ]up", "sounding confident", "confident answer", "confident and wrong", "wrong information", "wrong numbers"]
+  },
+  "Grounding": {
+    "explicit": ["\\bground(ed|ing)\\b"],
+    "implicit": ["based on real company data", "links to the source", "show the generated query"]
+  },
+  "RAG": {
+    "explicit": ["\\bRAG\\b", "retrieval[- ]augmented"],
+    "implicit": ["answer questions over internal docs", "retrieval brings", "using the company knowledge base", "answers questions from the docs"]
+  },
+  "Embedding": {
+    "explicit": ["\\bembeddings?\\b"],
+    "implicit": ["most similar chunks"]
+  },
+  "Vector database": {
+    "explicit": ["vector (database|db|store)s?"],
+    "implicit": ["\\bindexes\\b", "enterprise search"]
+  },
+  "Fine-tuning": {
+    "explicit": ["fine[- ]tun\\w*"],
+    "implicit": ["models adapted to a company"]
+  },
+  "Inference": {
+    "explicit": ["\\binference\\b"],
+    "implicit": ["GPU compute", "suggestions come after"]
+  },
+  "AI agent": {
+    "explicit": ["(?<!human )\\bagents?\\b"],
+    "implicit": ["plans the steps by itself", "\\bautonomous\\b", "can also do actions", "agent does it"]
+  },
+  "Agentic harness": {
+    "explicit": ["agentic harness(es)?"],
+    "implicit": ["agentic coding tool", "terminal agent", "works in the terminal"]
+  },
+  "Tool calling": {
+    "explicit": ["tool calling", "function calling"],
+    "implicit": ["runs commands", "run commands", "using tools connected"]
+  },
+  "MCP": {
+    "explicit": ["\\bMCP\\b", "model context protocol"],
+    "implicit": ["connected to the company systems", "connect to Jira"]
+  },
+  "Guardrails": {
+    "explicit": ["guardrails?"],
+    "implicit": ["\\bsandbox(es)?\\b", "permission prompts", "must not show a document", "respects permissions"]
+  },
+  "Prompt injection": {
+    "explicit": ["prompt injections?"],
+    "implicit": ["ignore its instructions", "run something dangerous"]
+  },
+  "Human in the loop": {
+    "explicit": ["human[- ]in[- ]the[- ]loop"],
+    "implicit": ["human review", "reviews the result", "handoff to a human", "hands off to humans", "still has to review", "must be checked"]
+  },
+  "Evals": {
+    "explicit": ["\\bevals?\\b", "\\bevaluation\\b"],
+    "implicit": ["search quality", "results must be checkable"]
+  },
+  "Multimodal model": {
+    "explicit": ["multimodal\\w*"],
+    "implicit": ["text-to-image", "image and video generation", "voice generation"]
+  },
+  "SLM": {
+    "explicit": ["\\bSLMs?\\b", "small(er)? (open )?(language )?models?"],
+    "implicit": ["run models locally", "on their own servers", "on-premise"]
+  },
+  "Vibe coding": {
+    "explicit": ["vibe coding"],
+    "implicit": ["accept whatever is generated", "accept suggestions without understanding"]
+  }
+}
